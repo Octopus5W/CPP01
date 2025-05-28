@@ -1,0 +1,31 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hdelbecq <hdelbecq@student.s19.be>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/05/28 20:54:45 by hdelbecq          #+#    #+#             */
+/*   Updated: 2025/05/28 22:20:55 by hdelbecq         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef ZOMBIE_HPP
+#define ZOMBIE_HPP
+
+#include <iostream>
+class Zombie {
+	private:
+		std::string _name;
+	public:
+		Zombie ();
+		Zombie(std::string name);
+		~Zombie();
+		void announce(void);
+		void set_name(std::string name);
+};
+
+Zombie* newZombie(std::string name);
+void randomChump(std::string name);
+Zombie* zombieHorde(int N, std::string name);
+#endif
