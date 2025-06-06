@@ -6,7 +6,7 @@
 /*   By: hdelbecq <hdelbecq@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 20:54:45 by hdelbecq          #+#    #+#             */
-/*   Updated: 2025/05/28 21:08:00 by hdelbecq         ###   ########.fr       */
+/*   Updated: 2025/05/28 22:21:04 by hdelbecq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ class Zombie {
 		std::string _name;
 	public:
 		Zombie(std::string name);
-		~Zombie(void);
+		~Zombie();
 		void announce(void);
 };
 

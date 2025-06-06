@@ -6,7 +6,7 @@
 /*   By: hdelbecq <hdelbecq@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/28 20:54:38 by hdelbecq          #+#    #+#             */
-/*   Updated: 2025/05/28 22:21:24 by hdelbecq         ###   ########.fr       */
+/*   Updated: 2025/05/29 16:05:18 by hdelbecq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ Zombie::Zombie()
 }
 
 Zombie::Zombie(std::string name) : _name(name) {}
+
 Zombie::~Zombie()
 {
 	std::cout << _name << " is dead." << std::endl;
