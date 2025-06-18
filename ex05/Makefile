@@ -6,7 +6,7 @@
 #    By: hdelbecq <hdelbecq@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/11 16:20:50 by hdelbecq          #+#    #+#              #
-#    Updated: 2025/06/12 15:52:37 by hdelbecq         ###   ########.fr        #
+#    Updated: 2025/06/18 14:40:51 by hdelbecq         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,6 @@ CFLAGS = -Wall -Wextra -Werror -std=c++98
 SRC =	main.cpp Harl.cpp
 OBJ = $(SRC:.cpp=.o)
 
-$(info Using compiler: $(C++))
 all: $(NAME)
 
 $(NAME): $(OBJ)
