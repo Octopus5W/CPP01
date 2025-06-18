@@ -42,11 +42,9 @@ Copy_File::Copy_File(char *file, std::string to_replace, std::string the_replace
 			line_lenght = line.length();
 			if (line.at(cursor) == to_replace.at(cursor))
 			{
-				std::cout << "rep: cursor:" << cursor << "lenght the replace" << lenght_the_replace << std::endl;
 				for (cursor; cursor < line_lenght - 1 && cursor < lenght_to_replace - 1 && line.at(cursor) == to_replace.at(cursor) ; cursor++);
 				if (cursor == lenght_to_replace - 1)
 				{
-					std::cout << "if: cursor:" << cursor << " lenght the replace" << lenght_the_replace << " lenght to replace" << lenght_to_replace << std::endl;
 					output << the_replace;
 					line.erase(0, lenght_to_replace);
 					cursor = 0;
@@ -54,7 +52,6 @@ Copy_File::Copy_File(char *file, std::string to_replace, std::string the_replace
 			}
 			else if (line.at(cursor) != to_replace.at(cursor))
 			{
-				std::cout << "not" << std::endl;
 				for (cursor; cursor < line_lenght && line.at(cursor) != to_replace.at(0) ; cursor++);
 				output << line.substr(0, cursor);
 				line.erase(0, cursor);
