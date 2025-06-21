@@ -6,7 +6,7 @@
 /*   By: hdelbecq <hdelbecq@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 17:11:21 by hdelbecq          #+#    #+#             */
-/*   Updated: 2025/05/29 18:27:20 by hdelbecq         ###   ########.fr       */
+/*   Updated: 2025/06/21 04:34:43 by hdelbecq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,19 @@ HumanB::~HumanB(){}
 
 void HumanB::attack()
 {
-	if ((*_Weapon).getType() != "")
-		std::cout << _name << " attacks with their " << (*_Weapon).getType() << std::endl;
+	if (this->_Weapon.getType() == "")
+	{
+		std::cout << _name << " has no weapon." << std::endl;
+		return;
+	}
 	else
-		std::cout << _name << " has no weapon. Then " << _name << " attacks with their hand" << std::endl;
+	{		
+		std::cout << _name << " attacks with their " << this->_Weapon.getType() << std::endl;
+	}
+	
 }
 
 void HumanB::setWeapon(Weapon &weapon)
 {
-	*_Weapon = weapon;
+	this->_Weapon = weapon;
 }
