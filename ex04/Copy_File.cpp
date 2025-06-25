@@ -21,9 +21,15 @@ Copy_File::Copy_File(char *file, std::string to_replace, std::string the_replace
 	std::ofstream output(output_file_name);
 
 	if (in_file.fail())
-		std::cout << "Error: open in_file" << std::endl;
+	{
+		std::cerr << "Error: open in_file" << std::endl;
+		return;
+	}
 	else if (output.fail())
-		std::cout << "Error: create outfile" << std::endl;
+	{
+		std::cerr << "Error: create outfile" << std::endl;
+		return;
+	}
 	else
 	{
 		int cursor = 0;
