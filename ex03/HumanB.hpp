@@ -6,7 +6,7 @@
 /*   By: hdelbecq <hdelbecq@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 17:12:24 by hdelbecq          #+#    #+#             */
-/*   Updated: 2025/06/21 04:27:22 by hdelbecq         ###   ########.fr       */
+/*   Updated: 2025/06/25 15:18:27 by hdelbecq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class HumanB {
 	private:
 		std::string _name;
-		Weapon _Weapon;
+		Weapon *_Weapon;
 	public:
 		HumanB();
 		HumanB(std::string name);
